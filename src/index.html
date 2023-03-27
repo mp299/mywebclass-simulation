@@ -4,130 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MyWebClass Homepage</title>
-<!-- Bootstrap 5 CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-Dc9q05/3TGpF/brR5G5Pl5O5OoLQfNwybw8SbJ9HyH56jZEBEgZfki4l4h+dHv4lLbgy+6Ll8B3WqJzqZ+CCDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Bootstrap 5 JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-cAePHrOjsg1+15pXBu0BPIgV7s2sCFHrqI7FhxFAXc82g7rFJtX9mdVkkZnDUNZ7iHsIw85sxEs1yKPJd+faVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-Dc9q05/3TGpF/brR5G5Pl5O5OoLQfNwybw8SbJ9HyH56jZEBEgZfki4l4h+dHv4lLbgy+6Ll8B3WqJzqZ+CCDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Bootstrap 5 icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-ePlLtQOyjK5NSzQWbX9vxnKLoEweLLC+K4aWYFX0c4f4jKd+OoAgZIZulSIcOTe8Zprz9JH2l6+DnEGIg8lYwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Basic meta info -->
+    <meta name="keywords" content="My Webclass Homepage">
+    <meta name="author" content="Mithil Patel">
+    <meta name="description" content="A project to help educators integrate new technologies into their teaching">
 
-<!-- Basic meta info -->
-<meta name="keywords" content="My Webclass Homepage">
-<meta name="author" content="Mithil Patel">
-<meta name="description" content="A project to help educators integrate new technologies into their teaching">
+    <!-- OpenGraph meta -->
+    <meta property="og:title" content="MyWebClass Homepage">
+    <meta property="og:description" content="A project to help educators integrate new technologies into their teaching">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:url" content="https://www.mywebclass.com/">
 
-<!-- OpenGraph meta -->
-<meta property="og:title" content="MyWebClass Homepage">
-<meta property="og:description" content="A project to help educators integrate new technologies into their teaching">
-<meta property="og:image" content="assets/images/logo.png">
-<meta property="og:url" content="https://www.mywebclass.com/">
+    <!-- Google Analytics Consent Mode API -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+        gtag('set', 'ads_data_redaction', true);
+        gtag('set', 'GA_MEASUREMENT_ID', 'ANONYMIZE_IP');
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 
-<style>
-    body {
-        background-color: #F8F8F8;
-        font-family: Arial, sans-serif;
-    }
+    <!-- GDPR cookie consent banner -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#edeff5",
+                        "text": "#838391"
+                    },
+                    "button": {
+                        "background": "#4b81e8"
+                    }
+                },
+                "position": "bottom-right",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on our website.",
+                    "dismiss": "Got it!",
+                    "link": "Learn more",
+                    "href": "https://www.example.com/privacy-policy"
+                },
+                "cookie": {
+                    "name": "cookieconsent_status",
+                    "value": "dismiss"
+                }
+            });
+        });
+    </script>
 
-    .header {
-        background-color: #000000;
-        color: #FFFFFF;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    .nav-link {
-        color: #FFFFFF;
-    }
-
-    .banner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
-    }
-
-    .banner h1 {
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .banner p {
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .btn-start {
-        background-color: #53B8BB;
-        color: #FFFFFF;
-        font-weight: bold;
-            border-radius: 20px;
-            padding: 10px 20px;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        .image-container img {
-            width: 80%;
-        }
-
-        .footer {
-            background-color: #E9ECEF;
-            padding: 50px 0;
-        }
-
-        .footer h5 {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .footer p {
-            margin-bottom: 20px;
-        }
-
-        .footer label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .footer input[type=text] {
-            width: 60%;
-            padding: 10px;
-            border-radius: 20px;
-            border: none;
-            margin
-    </style>
 </head>
 <body>
     <header class="header">
-        <div>
-            <a href="/">
-                <img src="assets/images/logo.png" alt="MyWebClass Logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="content.html">Content Template</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="banner">
-            <h1>Teaching Made Easier</h1>
-            <p>This is a website for teachers to help them educate their students regarding the latest software.</p>
-        </div>
-    </main>
-</body>
-</html>
+        <div
+
 
