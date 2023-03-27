@@ -1,26 +1,18 @@
-name: Playwright Tests
+name: Playwright Test
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y xvfb libgtk-3-0 libgconf-2-4
-        npm install
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - run: npm install
 
-    - name: Run Playwright tests
-      env:
-        MY_APP_URL: http://localhost:3000
-      run: |
-        xvfb-run npm run test
+      - name: Run Playwright tests
+        run: npx playwright test src/js/siteMetrics.js
