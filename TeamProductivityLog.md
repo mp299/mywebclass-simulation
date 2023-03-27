@@ -7,5 +7,5 @@
 |Internationalization Research | 5 | https://github.com/mp299/mywebclass-simulation/wiki/Internationalization-Research | Done | Mike Massotto | 3/20/2023 | 3/26/2023| Internationalization | ---|
 |Homepage Basic | 3 |(https://github.com/mp299/mywebclass-simulation/issues/7) |Done| | Mithil Patel| 3/20/2023| 3/26/2023| initial|
 |Docker containerization | 3 |(https://github.com/mp299/mywebclass-simulation/pull/16) | Done| Mithil Patel| 3/20/2023| 3/27/2023| webdesign and run |  --- |
-|--- | ---|--- | ---| ---| ---| ---| --- |  --- |
+|Research and Develop automated tests | 8|https://github.com/mp299/mywebclass-simulation/issues/19 | Done| Mithil Patel| 3/20/23| 3/27/23| Testing |  --- |
 |--- | ---|--- | ---| ---| ---| ---| --- |  --- |
