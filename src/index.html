@@ -20,6 +20,30 @@
     <meta property="og:image" content="assets/images/logo.png"/>
     <meta property="og:url" content=""/>
 
+    <!--Connects gdpr.js script to this file-->
+    <script src="src/js/gdpr.js"></script>
+
+    <!--Boostrap Modal Consent Form-->
+    <div class="modal" tabindex="-1" role="dialog" id="gdpr-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GDPR Consent</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We use cookies to improve your browsing experience and to analyze website traffic. We also share
+                        information about your use of our site with our analytics partners. By clicking "I Consent", you
+                        consent to our use of cookies and our data practices as described in our <a href="#">Privacy
+                            Policy</a>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+                    <button type="button" class="btn btn-primary" id="gdpr-accept">I Consent</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </head>
 
 <body class="pt-5">
