@@ -18,7 +18,8 @@
 |Research and Develop automated tests | 8|https://github.com/mp299/mywebclass-simulation/issues/19 | Done| Mithil Patel| 3/20/23| 3/27/23| Testing |  --- |
 |Web Accessibility Concerns| ---|https://github.com/mp299/mywebclass-simulation/issues/9 | Done | Hehjun Lim | 3/20/23 | 3/26/23 | Product Development |  --- |
 
-|Responsive Design Concerns | ---|https://github.com/mp299/mywebclass-simulation/issues/14  | Done | Hehjun Lim | 3/20/23 | 3/26/23 | Product Development |  --- |
+|Responsive Design Concerns | 5 |https://github.com/mp299/mywebclass-simulation/issues/14  | Done | Hehjun Lim | 3/20/23 | 3/26/23 | Product Development |  --- |
 
-|SEO Concerns | ---|https://github.com/mp299/mywebclass-simulation/issues/13| Done | Hehjun Lim | 3/20/23 | 3/26/23 | Product Development |  --- |
-|GDPR and Google Analytics | ---|https://github.com/mp299/mywebclass-simulation/issues/23 | Done | Hehjun Lim | 3/20/23 | 3/27/23 | Product Development |  --- |
+|SEO Concerns | 3 |https://github.com/mp299/mywebclass-simulation/issues/13| Done | Hehjun Lim | 3/20/23 | 3/26/23 | Product Development |  --- |
+
+|GDPR and Google Analytics | 3 |https://github.com/mp299/mywebclass-simulation/issues/23 | Done | Hehjun Lim | 3/20/23 | 3/27/23 | Product Development |  --- |
